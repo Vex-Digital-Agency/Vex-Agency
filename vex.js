@@ -275,7 +275,6 @@
     $('#service-grid').innerHTML=items.map(([label,ar,en,desc,descEn],i)=>`<article class="service-item"><div class="service-top"><span>${String(i+1).padStart(2,'0')} / ${label}</span><span aria-hidden="true">↗</span></div><h3>${e(tr(ar,en))}</h3><p>${e(tr(desc,descEn))}</p></article>`).join('');
     const steps=[['CREATE','نفهم نشاطك وجمهورك ونطوّر الفكرة والرسالة','Understand your business & audience; architect the concept and core hooks'],['TEST','نختبر زوايا متعددة ونقرأ استجابة السوق والبيانات بدقة','Deploy multi-angle testing and evaluate empirical audience response'],['SCALE','نطوّر ما يثبت كفاءته ونوسّع الاستثمار بمضاعفة الأرباح','Scale the winning creative angles aggressively to compound ROI and market share']];
     $('#process').innerHTML=steps.map(([title,ar,en])=>`<div class="process-item"><strong>${title}</strong><span>${e(tr(ar,en))}</span></div>`).join('');
-    $('#about-stats').innerHTML=[tr('مشاريع ودراسات عمل','Projects & case studies'),tr('فيديو في المعرض','Videos in the portfolio'),tr('خطة وملف محتوى','Plans & content files')].map(label=>`<div><span>${e(label)}</span></div>`).join('');
   }
 
   function renderLandingPages(){

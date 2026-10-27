@@ -1341,27 +1341,6 @@ tbody tr:hover {
   object-position:left
 }
 
-.about-stats {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
-  padding-top:25px;
-  align-items:center;
-  text-align:center
-}
-
-.about-stats strong {
-  display:block;
-  font:700 30px var(--latin);
-  color:var(--accent)
-}
-
-.about-stats span {
-  font-size:12px;
-  line-height:1.6;
-  color:var(--muted)
-}
-
 .about-copy>p:not(.eyebrow) {
   font-size:12px;
   color:var(--muted);
@@ -2128,14 +2107,6 @@ html[dir=ltr] .contact h2 {
     font-size:11px
   }
 
-  .about-stats strong {
-    font-size:25px
-  }
-
-  .about-stats {
-    gap:15px
-  }
-
   .process-item {
     gap:12px;
     grid-template-columns:65px 1fr
@@ -2841,19 +2812,6 @@ html[dir=ltr] .contact h2 {
 
   .about-brand img {
     aspect-ratio:1.5
-  }
-
-  .about-stats {
-    padding-top:23px;
-    gap:15px
-  }
-
-  .about-stats strong {
-    font-size:29px
-  }
-
-  .about-stats span {
-    font-size:9px
   }
 
   .about-copy>p:not(.eyebrow) {
@@ -3795,10 +3753,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible  {
   font: 400 18px var(--latin);
 }
 
-.about-stats strong  {
-  color: var(--gold-light);
-}
-
 .process-item strong  {
   color: var(--gold);
 }
@@ -4014,10 +3968,6 @@ dialog[open]  {
     padding: 10px;
   }
 
-  .about-stats  {
-    gap: 12px;
-  }
-
   .contact-layout  {
     gap: 35px;
   }
@@ -4172,10 +4122,6 @@ dialog[open]  {
     height: auto;
   }
 
-  .about-stats  {
-    gap: 14px;
-  }
-
   .contact-layout  {
     gap: 35px;
   }
@@ -4244,18 +4190,19 @@ dialog[open]  {
 }
 
 .about-identity .scene-emblem {
-  width: min(48%,240px);
+  width: min(55%,260px);
   top: 42%;
 }
 
 .about-identity .scene-emblem img {
   width: 100%;
-  max-width: 200px;
+  max-width: 240px;
   height: auto;
   aspect-ratio: 1;
   object-fit: contain;
   border: 0;
   border-radius: 50%;
+  display: block;
   margin-inline: auto;
 }
 
@@ -4271,18 +4218,6 @@ dialog[open]  {
   letter-spacing: .5px;
 }
 
-.about-brand .about-stats {
-  flex-shrink: 0;
-  margin-top: 20px;
-  padding-top: 21px;
-  padding-bottom: 2px;
-  border-top: 1px solid var(--gold-line);
-  text-align: center;
-  gap: 12px;
-}
-
-.about-brand .about-stats strong { font-size: 30px; }
-.about-brand .about-stats span { font-size: 11px; }
 .about-copy { min-width: 0; display: flex; flex-direction: column; }
 .about-copy>.text-link { align-self: flex-start; margin-top: auto; }
 
@@ -4293,8 +4228,6 @@ dialog[open]  {
   .about-identity .scene-emblem { width: 65%; }
   .about-identity .scene-emblem>span { font-size: 8px; letter-spacing: 3px; }
   .about-identity .scene-signature { font-size: 18px; letter-spacing: 0; }
-  .about-brand .about-stats strong { font-size: 25px; }
-  .about-brand .about-stats span { font-size: 9px; }
 }
 
 @media (max-width:620px) {
@@ -4307,9 +4240,6 @@ dialog[open]  {
   .about-identity .scene-emblem { width: 53%; top: 42%; }
   .about-identity .scene-emblem>span { font-size: 8px; letter-spacing: 3px; margin-top: 12px; }
   .about-identity .scene-signature { font-size: clamp(18px,5vw,25px); bottom: 6%; }
-  .about-brand .about-stats { margin-top: 12px; padding-top: 18px; gap: 8px; }
-  .about-brand .about-stats strong { font-size: 27px; }
-  .about-brand .about-stats span { font-size: 9px; }
   .about-copy>.text-link { margin-top: 0; }
 }
 
